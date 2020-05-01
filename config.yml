@@ -1,0 +1,18 @@
+title: Build your own Biz Ops
+description: >-
+  Get to know the tools that make the Biz Ops ecosystem tick by building your
+  own graph of knowledge for a subject of your choice
+template:
+  repo: build-your-own-biz-ops-template
+  name: build-your-own-biz-ops
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
